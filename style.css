@@ -1,0 +1,258 @@
+/*  
+  @author Eko
+*/
+
+/* Navbar */
+
+body {
+  background: url(img/utama.png) no-repeat fixed;
+  background-size: 100%;
+  height: max-content;
+}
+
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+  height: 40px;
+  position: relative;
+}
+
+.navbar-brand img {
+  height: 30px;
+}
+
+/* Jumbotron*/
+.jumbotron {
+  background-image: url(img/utama.png);
+  background-size: cover;
+  height: 800px;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(24, 24, 24, 0.247), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .display-4 {
+  font-family: Poppins;
+  color: rgb(255, 255, 255);
+  margin-top: 100px;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(173, 131, 131, 0.911);
+  font-size: 90px;
+  opacity: 50%;
+  margin-bottom: 0px;
+}
+
+.jumbotron .display-4 span {
+  font-weight: 500;
+}
+
+/*awal info panel*/
+
+.panel {
+  display: flexbox;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 5);
+  border-radius: 0px;
+  margin-top: 0px;
+  background-color: #F9F6F6;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+  opacity: 80%;
+}
+
+.panel img {
+  display: block;
+  image-resolution: 40px;
+  height: 270px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  opacity: 100%;
+}
+
+/*akhir info panel*/
+
+/*workingspace*/
+
+.workingspace {
+  display: flexbox;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 5);
+  border-radius: 0px;
+  margin-top: 0px;
+  background-color: #F9F6F6;
+  width: 100%;
+  height: 375px;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: center;
+  opacity: 80%;
+}
+
+.workingspace h3 {
+  font-size: 35px;
+  font-weight: 200;
+  text-transform: none;
+  margin-top: 30px;
+  opacity: 100%;
+}
+
+.workingspace img {
+  margin-top: 30px;
+  border-radius: 20px;
+  margin-left: 150px;
+  height: 250px;
+  opacity: 100%;
+}
+
+.workingspace a {
+  margin-bottom: 50px;
+  opacity: 100%;
+}
+
+.workingspace h3 span {
+  font-weight: 500;
+  opacity: 100%;
+}
+
+.workingspace p {
+  font-size: 18px;
+  color: #3f3c3c;
+  font-weight: 200;
+  margin: 25px 0px;
+  opacity: 100%;
+}
+
+/* Akhir workingspace*/
+
+/*Akhir kata / testimoni*/
+
+.akhirkata {
+  display: flexbox;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 5);
+  border-radius: 0px;
+  margin-top: 0px;
+  background-color: #5A5A5A;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: center;
+  opacity: 80%;
+}
+
+.akhirkata img {
+  text-align: center;
+  image-resolution: 40px;
+  height: 240px;
+  margin-left: 35px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/*Akhir dari kata / testimoni*/
+
+/*Footer*/
+
+.footer {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  background-color: #7a7879ff;
+}
+
+.footer img {
+  image-resolution: 40px;
+  height: 30px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.footer h1 {
+  margin-top: 30px;
+  margin-left: 130px;
+  margin-bottom: 25px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer p {
+  text-align: left;
+  margin-right: 30px;
+  margin-left: 50px;
+  margin-top: 30px;
+  color: white;
+  font-size: 18px;
+}
+
+/*Akhir Footer*/
+
+/* utility*/
+.tombol {
+  text-transform: none;
+  border-radius: 30px;
+}
+
+/* Desktop version */
+.navbar-brand,
+.nav-link {
+  color: white;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.911);
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    color: white;
+    text-transform: none;
+    margin-right: 20px;
+  }
+
+  .nav-link:hover {
+    border-bottom: 3px solid #8E95FF;
+    margin-bottom: -3px;
+  }
+
+  .jumbotron {
+    margin-top: -75px;
+    height: 660px;
+  }
+
+  .jumbotron,
+  .display-4 {
+    font-size: 100px;
+  }
+
+  .workingspace {
+    text-align: left;
+  }
+
+  .akhirkata {
+    font-size: 30px;
+  }
+}
+
+/*Akhir Program*/
